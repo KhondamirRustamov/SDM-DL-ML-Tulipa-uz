@@ -51,7 +51,7 @@ PIPO.mod.dat <- BIOMOD_FormatingData(resp.var = PIPO.dat,
 PIPO.mod <- BIOMOD_Modeling(data = PIPO.mod.dat,
                             models = c('GLM', 'GBM', 'RF', 'MARS', 'CTA', 'SRE', 'FDA', 'MAXENT.Phillips'),
                             SaveObj = TRUE,
-                            NbRunEval=1,
+                            NbRunEval=5,
                             DataSplit=80,
                             VarImport=0)
 
